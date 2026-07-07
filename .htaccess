@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /nussavote/
+
+# Block direct access to application/ and system/ folders
+RewriteRule ^application/ - [F,L]
+RewriteRule ^system/ - [F,L]
+
+# Allow direct access to files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything else through index.php
+RewriteRule ^(.*)$ index.php/$1 [L]

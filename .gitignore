@@ -1,0 +1,18 @@
+# CodeIgniter 3 Ignored Files
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+application/sessions/*
+!application/sessions/index.html
+assets/uploads/candidates/*
+!assets/uploads/candidates/index.html
+
+# User-generated Configs (if any)
+application/config/development/
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
