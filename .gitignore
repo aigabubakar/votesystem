@@ -11,6 +11,10 @@ assets/uploads/candidates/*
 # User-generated Configs (if any)
 application/config/development/
 
+# Database dumps
+database/
+*.sql
+
 # IDE & OS Files
 .vscode/
 .idea/
